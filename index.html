@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Towhid Initiative</title>
-    <link rel="shortcut icon" href="images/image 1-2 copy.png">
-    <link rel="stylesheet" href="style.css">
+    <title>Transition & Transform</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+    <style>
+        .field{
+        border: 2px solid red;
+        width: 1200px;
+        overflow: hidden;
+        
+        }
+        img{
+        width: 350px;
+        height: 500px;
+        }
+        .ball{
+        margin-top: -20px;  
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        left: 606px;
+        transition: transform 2s ease-in-out 0.3s;
+        }
+        .field:hover .ball{
+        transform: translate(600px, -300px)
+        }
+        .bat{
+        transition: transform 0.2s ease-in-out;
+        }
+        .bat:hover{
+        transform: rotate(-60deg);
+        transform-origin: 100% 0%;
+        }
+</style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>G <span style="color: red;">o</span> <span style="color: orange">o</span> <span style="color: blue;">g</span> <span style="color: green;">l</span> <span style="color: red;">e</span></h1>
-        <form action="https://www.google.com/search" method="get" class="search-bar">
-            <input type="text" placeholder="Search Google or type a URL" name="q">
-            <button type="submit"><img src="images/search.png"></button>
-        </form>
+    <h1 class="text-success">Created by Md Towhid</h1>
+    <div class="field">
+    <img class="bat" src="bat copy1.png" alt="">
+    <div class="ball"> </div>
     </div>
-
 </body>
 </html>
